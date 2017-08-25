@@ -1,0 +1,7 @@
+{
+  "name": "polymer-gridstack-demo",
+  "short_name": "polymer-gridstack-demo",
+  "description": "Demo for polymer gridstack",
+  "start_url": "/",
+  "display": "standalone"
+}

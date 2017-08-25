@@ -1,0 +1,163 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../../bower_components/polymer-gridstack/polymer-gridstack.html">
+<link rel="import" href="../../bower_components/polymer-gridstack/polymer-gridstack-style.html">
+<dom-module id="polymer-gridstack-demo-app">
+  <template>
+    <style include="polymer-gridstack-style">
+      :host {
+        display: block;
+        --background-color:#ff817b;
+        --padding-all:15px 0px;  
+      }
+
+      .grid-stack-item-content {
+        background: white;
+        color: #2c3e50;
+        font-family: 'Indie Flower', cursive;
+        text-align: center;
+        font-size: 20px;
+      }
+    </style>
+    <polymer-gridstack data-properties="{{prop}}">
+          <div class="grid-stack" data-gs-width="12">
+              <div class="grid-stack-item" data-gs-x="0" data-gs-y="0" data-gs-width="4" data-gs-height="2">
+                    <div class="grid-stack-item-content">DIV ONE</div>
+                </div>
+                <div class="grid-stack-item" data-gs-x="4" data-gs-y="0" data-gs-width="4" data-gs-height="4">
+                    <div class="grid-stack-item-content">DIV TWO</div>
+                </div>
+                <div class="grid-stack-item" data-gs-x="8" data-gs-y="0" data-gs-width="2" data-gs-height="2" data-gs-min-width="2" data-gs-no-resize="yes">
+                    <div class="grid-stack-item-content"> DIV THREE NO RESIZE </div>
+                </div>
+                <div class="grid-stack-item" data-gs-x="10" data-gs-y="0" data-gs-width="2" data-gs-height="2">
+                    <div class="grid-stack-item-content"> DIV FOUR</div>
+                </div>
+                <div class="grid-stack-item" data-gs-x="0" data-gs-y="4" data-gs-width="2" data-gs-height="2">
+                    <div class="grid-stack-item-content">DIV FIVE</div>
+                </div>
+                <div class="grid-stack-item" data-gs-x="2" data-gs-y="4" data-gs-width="2" data-gs-height="4">
+                    <div class="grid-stack-item-content">DIV SIX</div>
+                </div>
+                <div class="grid-stack-item" data-gs-x="8" data-gs-y="4" data-gs-width="4" data-gs-height="2">
+                    <div class="grid-stack-item-content">DIV SEVEN</div>
+                </div>
+                <div class="grid-stack-item" data-gs-x="0" data-gs-y="6" data-gs-width="2" data-gs-height="2">
+                    <div class="grid-stack-item-content">DIV EIGHT</div>
+                </div>
+                <div class="grid-stack-item" data-gs-x="4" data-gs-y="6" data-gs-width="4" data-gs-height="2">
+                    <div class="grid-stack-item-content">DIV NINE</div>
+                </div>
+                <div class="grid-stack-item" data-gs-x="8" data-gs-y="6" data-gs-width="2" data-gs-height="2">
+                    <div class="grid-stack-item-content">DIV TEN</div>
+                </div>
+                <div class="grid-stack-item" data-gs-x="10" data-gs-y="6" data-gs-width="2" data-gs-height="2">
+                    <div class="grid-stack-item-content">DIV ELEVEN</div>
+                </div>
+            </div>            
+          </polymer-gridstack>
+
+          <p>Code : <a href="https://github.com/VinodLouis/polymer-gridstack-demo" target="_blank"> Github</a></p>
+          <hr/>
+          <pre  style="font-family:arial;font-size:12px;border:1px dashed #CCCCCC;width:99%;height:auto;overflow:auto;background:#f0f0f0;;background-image:URL(http://2.bp.blogspot.com/_z5ltvMQPaa8/SjJXr_U2YBI/AAAAAAAAAAM/46OqEP32CJ8/s320/codebg.gif);padding:0px;color:#000000;text-align:left;line-height:20px;"><code style="color:#000000;word-wrap:normal;">1:  &lt;link rel="import" href="../../bower_components/polymer/polymer-element.html"&gt;  
+2:  &lt;link rel="import" href="../../bower_components/polymer-gridstack/polymer-gridstack.html"&gt;  
+3:  &lt;link rel="import" href="../../bower_components/polymer-gridstack/polymer-gridstack-style.html"&gt;  
+4:  &lt;dom-module id="polymer-gridstack-demo-app"&gt;  
+5:   &lt;template&gt;  
+6:    &lt;style include="polymer-gridstack-style"&gt;  
+7:     :host {  
+8:      display: block;  
+9:      --background-color:#ff817b;  
+10:      --padding-all:15px 0px;   
+11:     }  
+12:     .grid-stack-item-content {  
+13:      background: white;  
+14:      color: #2c3e50;  
+15:      font-family: 'Indie Flower', cursive;  
+16:      text-align: center;  
+17:      font-size: 20px;  
+18:     }  
+19:    &lt;/style&gt;  
+20:    &lt;polymer-gridstack data-properties="{{prop}}"&gt;  
+21:       &lt;div class="grid-stack" data-gs-width="12"&gt;  
+22:         &lt;div class="grid-stack-item" data-gs-x="0" data-gs-y="0" data-gs-width="4" data-gs-height="2"&gt;  
+23:            &lt;div class="grid-stack-item-content"&gt;DIV ONE&lt;/div&gt;  
+24:          &lt;/div&gt;  
+25:          &lt;div class="grid-stack-item" data-gs-x="4" data-gs-y="0" data-gs-width="4" data-gs-height="4"&gt;  
+26:            &lt;div class="grid-stack-item-content"&gt;DIV TWO&lt;/div&gt;  
+27:          &lt;/div&gt;  
+28:          &lt;div class="grid-stack-item" data-gs-x="8" data-gs-y="0" data-gs-width="2" data-gs-height="2" data-gs-min-width="2" data-gs-no-resize="yes"&gt;  
+29:            &lt;div class="grid-stack-item-content"&gt; DIV THREE NO RESIZE &lt;/div&gt;  
+30:          &lt;/div&gt;  
+31:          &lt;div class="grid-stack-item" data-gs-x="10" data-gs-y="0" data-gs-width="2" data-gs-height="2"&gt;  
+32:            &lt;div class="grid-stack-item-content"&gt; DIV FOUR&lt;/div&gt;  
+33:          &lt;/div&gt;  
+34:          &lt;div class="grid-stack-item" data-gs-x="0" data-gs-y="4" data-gs-width="2" data-gs-height="2"&gt;  
+35:            &lt;div class="grid-stack-item-content"&gt;DIV FIVE&lt;/div&gt;  
+36:          &lt;/div&gt;  
+37:          &lt;div class="grid-stack-item" data-gs-x="2" data-gs-y="4" data-gs-width="2" data-gs-height="4"&gt;  
+38:            &lt;div class="grid-stack-item-content"&gt;DIV SIX&lt;/div&gt;  
+39:          &lt;/div&gt;  
+40:          &lt;div class="grid-stack-item" data-gs-x="8" data-gs-y="4" data-gs-width="4" data-gs-height="2"&gt;  
+41:            &lt;div class="grid-stack-item-content"&gt;DIV SEVEN&lt;/div&gt;  
+42:          &lt;/div&gt;  
+43:          &lt;div class="grid-stack-item" data-gs-x="0" data-gs-y="6" data-gs-width="2" data-gs-height="2"&gt;  
+44:            &lt;div class="grid-stack-item-content"&gt;DIV EIGHT&lt;/div&gt;  
+45:          &lt;/div&gt;  
+46:          &lt;div class="grid-stack-item" data-gs-x="4" data-gs-y="6" data-gs-width="4" data-gs-height="2"&gt;  
+47:            &lt;div class="grid-stack-item-content"&gt;DIV NINE&lt;/div&gt;  
+48:          &lt;/div&gt;  
+49:          &lt;div class="grid-stack-item" data-gs-x="8" data-gs-y="6" data-gs-width="2" data-gs-height="2"&gt;  
+50:            &lt;div class="grid-stack-item-content"&gt;DIV TEN&lt;/div&gt;  
+51:          &lt;/div&gt;  
+52:          &lt;div class="grid-stack-item" data-gs-x="10" data-gs-y="6" data-gs-width="2" data-gs-height="2"&gt;  
+53:            &lt;div class="grid-stack-item-content"&gt;DIV ELEVEN&lt;/div&gt;  
+54:          &lt;/div&gt;  
+55:        &lt;/div&gt;        
+56:       &lt;/polymer-gridstack&gt;  
+57:   &lt;/template&gt;  
+58:   &lt;script&gt;  
+59:    /**  
+60:     * @customElement  
+61:     * @polymer  
+62:     */  
+63:    class PolymerGridstackDemoApp extends Polymer.Element {  
+64:     static get is() { return 'polymer-gridstack-demo-app'; }  
+65:     static get properties() {  
+66:      return {  
+67:       prop: {  
+68:        type: Object,  
+69:        value: {  
+70:          width: 12  
+71:        }  
+72:       }  
+73:      };  
+74:     }  
+75:    }  
+76:    window.customElements.define(PolymerGridstackDemoApp.is, PolymerGridstackDemoApp);  
+77:   &lt;/script&gt;  
+78:  &lt;/dom-module&gt;  
+</code></pre>
+  </template>
+
+  <script>
+    /**
+     * @customElement
+     * @polymer
+     */
+    class PolymerGridstackDemoApp extends Polymer.Element {
+      static get is() { return 'polymer-gridstack-demo-app'; }
+      static get properties() {
+        return {
+          prop: {
+            type: Object,
+            value: {
+                width: 12
+            }
+          }
+        };
+      }
+    }
+
+    window.customElements.define(PolymerGridstackDemoApp.is, PolymerGridstackDemoApp);
+  </script>
+</dom-module>
